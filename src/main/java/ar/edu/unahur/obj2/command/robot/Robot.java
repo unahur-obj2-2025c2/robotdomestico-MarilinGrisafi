@@ -5,11 +5,15 @@ import java.util.List;
 
 import ar.edu.unahur.obj2.command.tareas.ITarea;
 
-public abstract class Robot {
+public class Robot {
     private Double bateria;
     private static final Double MINUTOS_PARA_CARGA_COMPLETA = 125.0; // o 7500 segundos
     private static final Double CARGA_MAXIMA = 100.0;
     private List<ITarea> tareasEjecutadas= new ArrayList<>();
+
+    public Robot(Double bateria) {
+        this.bateria = bateria;
+    }
 
     public Double bateriaRestante() {
         return bateria;

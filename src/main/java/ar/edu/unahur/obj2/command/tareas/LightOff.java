@@ -8,9 +8,8 @@ public class LightOff extends Comando{
     private Boolean estabaApagada;
 
     //constructor
-    public LightOff(Habitacion habitacion, Boolean estabaApagada) {
+    public LightOff(Habitacion habitacion) {
         this.habitacion = habitacion;
-        this.estabaApagada = !habitacion.getLaLuzEstaEncendida();
     }
     
     @Override

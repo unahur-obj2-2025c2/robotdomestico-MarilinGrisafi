@@ -7,9 +7,9 @@ public class LightOn extends Comando {
     private Boolean laLuzEstaPrendida;
     private Habitacion habitacion;
     
-    public LightOn(Boolean laLuzEstaPrendida, Habitacion habitacion) {
-        this.laLuzEstaPrendida = laLuzEstaPrendida;
+    public LightOn(Habitacion habitacion, Boolean laLuzEstaPrendida) {
         this.habitacion = habitacion;
+        this.laLuzEstaPrendida = laLuzEstaPrendida;
     }
 
     @Override

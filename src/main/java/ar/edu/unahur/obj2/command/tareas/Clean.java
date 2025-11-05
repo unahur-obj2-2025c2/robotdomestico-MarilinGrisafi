@@ -17,7 +17,7 @@ public class Clean extends Comando{
     }
     @Override
     protected void doEjecutar(Robot robot) {
-        habitacion.limpiarPiso();
+        habitacion.limpiarElPiso();
     }
 
     @Override
